@@ -61,7 +61,7 @@ def main():
     This will run all the required program functions
     """
     introduction()
-    get_price_data()
+    get_titansteel_data()
 
 
 main()
