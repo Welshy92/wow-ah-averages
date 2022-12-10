@@ -41,6 +41,22 @@ def get_titansteel_data():
 
     return data_str
 
+def get_deviate_data():
+    """
+    Get price figure input for a Savory Deviate Delight from the user.
+    Run a while loop to collect a valid string of data from the user
+    via the terminal, which must be a whole number.
+    The loop will repeatedly request data, until it is valid.
+    """
+    while True:
+        data_str = input("Enter the price of a Savory Deviate Delight\n")
+
+        if validate_data(data_str):
+            print("Data is valid!")
+            break
+
+    return data_str
+
 
 def validate_data(value):
     """
@@ -62,6 +78,7 @@ def main():
     """
     introduction()
     get_titansteel_data()
+    get_deviate_data()
 
 
 main()
