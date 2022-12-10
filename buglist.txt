@@ -1,0 +1,2 @@
+Price list resetting to blank after each entry. Made the list a global variable.
+Data was being put into the sheet with a ' before the number. Passed the appending data as a int.

@@ -33,13 +33,13 @@ def get_titansteel_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Titansteel Bar:\n")
+        titansteel_str = input("Enter the price of a Titansteel Bar:\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(titansteel_str):
+            update_new_prices(titansteel_str)
             break
 
-    return data_str
+    return titansteel_str
 
 
 def get_deviate_data():
@@ -50,13 +50,13 @@ def get_deviate_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Savory Deviate Delight\n")
+        deviate_str = input("Enter the price of a Savory Deviate Delight\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(deviate_str):
+            update_new_prices(deviate_str)
             break
 
-    return data_str
+    return deviate_str
 
 
 def get_pygmy_data():
@@ -67,13 +67,13 @@ def get_pygmy_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Pygmy Oil\n")
+        pygmy_str = input("Enter the price of a Pygmy Oil\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(pygmy_str):
+            update_new_prices(pygmy_str)
             break
 
-    return data_str
+    return pygmy_str
 
 
 def get_orb_data():
@@ -84,13 +84,13 @@ def get_orb_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Frozen Orb\n")
+        orb_str = input("Enter the price of a Frozen Orb\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(orb_str):
+            update_new_prices(orb_str)
             break
 
-    return data_str
+    return orb_str
 
 
 def get_lotus_data():
@@ -101,13 +101,13 @@ def get_lotus_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Frost Lotus\n")
+        lotus_str = input("Enter the price of a Frost Lotus\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(lotus_str):
+            update_new_prices(lotus_str)
             break
 
-    return data_str
+    return lotus_str
 
 
 def get_illusion_data():
@@ -118,13 +118,13 @@ def get_illusion_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Illusion Dust\n")
+        illusion_str = input("Enter the price of a Illusion Dust\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(illusion_str):
+            update_new_prices(illusion_str)
             break
 
-    return data_str
+    return illusion_str
 
 
 def get_eternal_data():
@@ -135,13 +135,13 @@ def get_eternal_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Eternal Fire\n")
+        eternal_str = input("Enter the price of a Eternal Fire\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(eternal_str):
+            update_new_prices(eternal_str)
             break
 
-    return data_str
+    return eternal_str
 
 
 def get_frostweave_data():
@@ -152,13 +152,13 @@ def get_frostweave_data():
     The loop will repeatedly request data, until it is valid.
     """
     while True:
-        data_str = input("Enter the price of a Frostweave Cloth\n")
+        frostweave_str = input("Enter the price of a Frostweave Cloth\n")
 
-        if validate_data(data_str):
-            print("Data is valid!")
+        if validate_data(frostweave_str):
+            update_new_prices(frostweave_str)
             break
 
-    return data_str
+    return frostweave_str
 
 
 def validate_data(value):
@@ -175,6 +175,26 @@ def validate_data(value):
     return True
 
 
+new_price_list = []
+
+
+def update_new_prices(value):
+    """
+    Adds verified data to a list to be later appended to a new row.
+    """
+    new_price_list.append(int(value))
+    print("Price confirmed!")
+
+
+def append_new_prices(list):
+    SHEET.worksheet("price").append_row(list)
+    print("uploading new data.", list)
+    print("New prices added to datasheet.")
+
+
+"def calc_new_average():"
+
+
 def main():
     """
     This will run all the required program functions
@@ -188,6 +208,7 @@ def main():
     get_illusion_data()
     get_eternal_data()
     get_frostweave_data()
+    append_new_prices(new_price_list)
 
 
 main()
