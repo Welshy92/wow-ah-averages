@@ -15,14 +15,13 @@ SHEET = GSPREAD_CLIENT.open('wow-averages')
 
 def introduction():
     """
-    This prints an introductory statement and gives a brief explaination
+    This prints an introductory statement and gives a brief explanation
     of how the data should be entered by the user into the terminal.
     """
     print("Welcome to the WoW AH average price analyser.\n")
-    print("You will go through 8 popular items to sell, one by one.")
-    print("You will need to know the current lowest price of each item on the AH.")
-    print("When asked, please enter your price in Silver. Remember 1 Gold = 100 Silver.")
-    print("If the price has Copper in it, please round it to the nearest Silver.\n")
+    print("You will go through 8 popular items.")
+    print("Please enter your price in Silver. Remember 1 Gold = 100 Silver.")
+    print("Please round the price to the nearest Silver.\n")
 
 
 def get_titansteel_data():
@@ -112,7 +111,7 @@ def get_lotus_data():
 
 def get_illusion_data():
     """
-    Get price figure input for a Illusion Dust from the user.
+    Get price figure input for an Illusion Dust from the user.
     Run a while loop to collect a valid string of data from the user
     via the terminal, which must be a whole number.
     The loop will repeatedly request data, until it is valid.
@@ -129,7 +128,7 @@ def get_illusion_data():
 
 def get_eternal_data():
     """
-    Get price figure input for a Eternal Fire from the user.
+    Get price figure input for an Eternal Fire from the user.
     Run a while loop to collect a valid string of data from the user
     via the terminal, which must be a whole number.
     The loop will repeatedly request data, until it is valid.
@@ -169,7 +168,7 @@ def validate_data(value):
     try:
         [int(value)]
     except ValueError as e:
-        print(f"Invalid data: '{value}'. Data must be a whole number. Try again.\n")
+        print(f"Invalid data: '{value}'. Data must be a whole number.\n")
         return False
 
     return True
@@ -183,7 +182,7 @@ def update_new_prices(value):
     Adds verified data to a list to be later appended to a new row.
     """
     new_price_list.append(int(value))
-    print("Price confirmed!")
+    print("##### Price confirmed! #####")
 
 
 def append_new_prices(list):
@@ -191,8 +190,9 @@ def append_new_prices(list):
     Add all the new data to a new row within the price worksheet.
     """
     SHEET.worksheet("price").append_row(list)
-    print("uploading new data.")
-    print(list)
+    print("###############################################")
+    print("Uploading new data.")
+    print("You entered", list)
     print("New prices added to datasheet.")
 
 
@@ -217,6 +217,7 @@ def calculate_new_averages(data):
     Calculate the average price for each item type over the last
     5 sets on inputs, then append them to the average worksheet.
     """
+    print("###############################################")
     print("Calculating new average prices...\n")
     new_average_data = []
 
@@ -225,7 +226,7 @@ def calculate_new_averages(data):
         average = sum(int_column) / len(int_column)
         new_average_data.append(round(average))
 
-    print("New averages calculated!")
+    print("##### New averages calculated! #####\n")
     SHEET.worksheet("average").append_row(new_average_data)
     display_new_averages(new_average_data)
 
