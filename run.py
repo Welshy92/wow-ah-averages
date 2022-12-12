@@ -243,7 +243,13 @@ def display_new_averages(data):
     print("Frost Lotus:", data[4])
     print("Illusion Dust:", data[5])
     print("Eternal Fire:", data[6])
-    print("Frostweave Cloth:", data[7])
+    print("Frostweave Cloth:", data[7], "\n")
+
+
+def outro():
+    print("###############################################")
+    print("Thank you for your input. See you again soon!")
+    print("Program created by Jacob Welsh.")
 
 
 def main():
@@ -261,6 +267,7 @@ def main():
     get_frostweave_data()
     append_new_prices(new_price_list)
     last_five_prices()
+    outro()
 
 
 main()
