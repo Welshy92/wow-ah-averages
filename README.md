@@ -7,6 +7,8 @@ WoW AH Average is a python terminal app that calculates the average prices of 8 
 [WoW AH Averages on Heroku](https://wow-ah-averages.herokuapp.com)
 
 [Github Repository](https://github.com/Welshy92/wow-ah-averages)
+
+[WoW AH Averages Google Sheet](https://docs.google.com/spreadsheets/d/1wza6kdwYhh3Aiv2q6d82rHmS1XexzgTOEdazPqkpHAo/edit?usp=sharing)
  
 ## **CONTENTS**
 
@@ -20,7 +22,20 @@ WoW AH Average is a python terminal app that calculates the average prices of 8 
 ***
 ## **User Experience (UX)**
  
-#### Client Goals
+#### Goals:
+
+* I want the user to be able to enter the price of 8 items that have a high demand on the World of Warcraft auction house. These items are:
+    * Titansteel Bar
+    * Savory Deviate Delight
+    * Pygmy Oil
+    * Frozen Orb
+    * Frost Lotus
+    * Illusion Dust
+    * Eternal Fire
+    * Frostweave Cloth
+* I then want the app to calculate the average prices using the last 5 entries for each of the 8 items, and show these average prices to the user.
+* Using these averages should aid the user in setting a good price for each item. the prices will allow it to sell well, but still make a tidy profit in game.
+
  
  
 ***
@@ -54,14 +69,14 @@ The app is deployed using Heroku. Visit the deployed app [here.](https://wow-ah-
  
 To do this I:
 1. Logged into [Heroku](https://www.heroku.com)
-2. This leads to the dashboard. I then clicked on "New" on the right hand side and click "Create New App".
-3. I set my app name to 'wow-ah-averages' and the region to Europe. THen I clicked "Create App"
-4. On the app page. I clicked onto "Settings" tab, then "reveal config vars".
+2. This leads to the dashboard. I then clicked on "New" on the right hand side and clicked "Create New App".
+3. I set my app name to 'wow-ah-averages' and the region to Europe. Then I clicked "Create App"
+4. On the app page. I clicked onto the "Settings" tab, then "reveal config vars".
 5. I added 2 config Vars. First was called "CREDS" with the value being copied directly from my CREDS.json file. Second was called "PORT" with the value of "8000" to ensure deployment would work correctly.
 6. I then clicked "Add Buildpack" and added Python, saving the changes after. I then clicked it again and added nodejs, saving changes again.
 7. I then clicked onto the "Deploy" tab.
 8. On the "Deployment Method" section, I clicked to connect to github and searched for the "wow-ah-averages" repository and connected it.
-9. Further down the page, I enabled automatic deploys so that Heroku would rebuild and deploy the app when changes are pushed to the github repository. There is an option below to manually build the app if that is prefered.
+9. Further down the page, I enabled automatic deploys so that Heroku would rebuild and deploy the app whenever changes are pushed to the github repository. There is an option below to manually build the app if that is prefered.
  
 ### **Local Development**
  
@@ -97,6 +112,6 @@ There are a few different sites that I used to learn the required skills to deve
 
 ### **Code Used**
 
- Lines 1-13 was taken directly from the Code institue 'Love Sandwhiches' mini-project and modified to linked up to my own projects API + worksheet.
+ Lines 1-13 was taken directly from the Code institue 'Love Sandwiches' mini-project and modified to link up to my own projects API + worksheet.
 ### **Acknowledgments**
  
