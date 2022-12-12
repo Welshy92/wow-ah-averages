@@ -187,12 +187,46 @@ def update_new_prices(value):
 
 
 def append_new_prices(list):
+    """
+    Add all the new data to a new row within the price worksheet.
+    """
     SHEET.worksheet("price").append_row(list)
-    print("uploading new data.", list)
+    print("uploading new data.")
+    print(list)
     print("New prices added to datasheet.")
 
 
-"def calc_new_average():"
+def last_five_prices():
+    """
+    Collects columns of data from price worksheet, collecting
+    the last 5 entries for each item and returns the data
+    as a list of lists.
+    """
+    prices = SHEET.worksheet("price")
+
+    columns = []
+    for ind in range(1, 9):
+        column = prices.col_values(ind)
+        columns.append(column[-5:])
+
+    calculate_new_averages(columns)
+
+
+def calculate_new_averages(data):
+    """
+    Calculate the average price for each item type over the last
+    5 sets on inputs, then append them to the average worksheet.
+    """
+    print("Calculating new average prices...\n")
+    new_average_data = []
+
+    for column in data:
+        int_column = [int(num) for num in column]
+        average = sum(int_column) / len(int_column)
+        new_average_data.append(round(average))
+
+    print("New averages calculated!")
+    SHEET.worksheet("average").append_row(new_average_data)
 
 
 def main():
@@ -209,6 +243,7 @@ def main():
     get_eternal_data()
     get_frostweave_data()
     append_new_prices(new_price_list)
+    last_five_prices()
 
 
 main()
