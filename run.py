@@ -171,7 +171,11 @@ def validate_data(value):
         print(f"Invalid data: '{value}'. Data must be a whole number.\n")
         return False
 
-    return True
+    if int(value) < 1:
+        print("The number cannot be below 1")
+        return False
+    else:
+        return True
 
 
 new_price_list = []

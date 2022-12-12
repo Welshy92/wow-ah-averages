@@ -1,3 +1,4 @@
 Price list resetting to blank after each entry. Made the list a global variable.
 Data was being put into the sheet with a ' before the number. Passed the appending data as a int.
 Average was only calculated for 6 out of 8 items. Increased the range.
+0's or minus numbers can be entered despite that not being a valid option. Added if statement to the validation.
