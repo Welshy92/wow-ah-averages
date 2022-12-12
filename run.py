@@ -182,7 +182,7 @@ def update_new_prices(value):
     Adds verified data to a list to be later appended to a new row.
     """
     new_price_list.append(int(value))
-    print("##### Price confirmed! #####")
+    print("########## Price confirmed! ##########")
 
 
 def append_new_prices(list):
