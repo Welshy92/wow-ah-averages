@@ -227,6 +227,23 @@ def calculate_new_averages(data):
 
     print("New averages calculated!")
     SHEET.worksheet("average").append_row(new_average_data)
+    display_new_averages(new_average_data)
+
+
+def display_new_averages(data):
+    """
+    This will display all the new price averages with the
+    item name attached to it.
+    """
+    print("The new price averages are as follows.")
+    print("Titansteel Bar:", data[0])
+    print("Savory Deviate Delight:", data[1])
+    print("Pygmy Oil:", data[2])
+    print("Frozen Orb:", data[3])
+    print("Frost Lotus:", data[4])
+    print("Illusion Dust:", data[5])
+    print("Eternal Fire:", data[6])
+    print("Frostweave Cloth:", data[7])
 
 
 def main():
