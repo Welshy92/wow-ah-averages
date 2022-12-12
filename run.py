@@ -21,7 +21,8 @@ def introduction():
     print("Welcome to the WoW AH average price analyser.\n")
     print("You will go through 8 popular items.")
     print("Please enter your price in Silver. Remember 1 Gold = 100 Silver.")
-    print("Please round the price to the nearest Silver.\n")
+    print("Please round the price to the nearest Silver.")
+    print("Please use the lowest current price on the AH.\n")
 
 
 def get_titansteel_data():
