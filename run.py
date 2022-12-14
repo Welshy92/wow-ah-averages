@@ -18,6 +18,18 @@ def introduction():
     This prints an introductory statement and gives a brief explanation
     of how the data should be entered by the user into the terminal.
     """
+    print("""
+     __        __ __        __       _    _   _  
+     \ \      / /_\ \      / /      / \  | | | | 
+      \ \ /\ / / _ \ \ /\ / /      / _ \ | |_| | 
+       \ V  V / (_) \ V  V /      / ___ \|  _  | 
+        \_/\_/ \___/ \_/\_/      /_/   \_\_| |_| 
+        / \__   _____ _ __ __ _  __ _  ___  ___  
+       / _ \ \ / / _ \ '__/ _` |/ _` |/ _ \/ __| 
+      / ___ \ V /  __/ | | (_| | (_| |  __/\__ \ 
+     /_/   \_\_/ \___|_|  \__,_|\__, |\___||___/ 
+                                |___/            
+    """)
     print("Welcome to the WoW AH average price analyser.\n")
     print("You will go through 8 popular items.")
     print("Please enter your price in Silver. Remember 1 Gold = 100 Silver.")
