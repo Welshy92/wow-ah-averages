@@ -1,15 +1,9 @@
 # **WoW AH Averages**
  
-WoW AH Average is a python terminal app that calculates the average prices of 8 different items on the World of Warcraft Auction House based on a users input of the prices.
- 
-![Image from the app](/assets/testing-images/amiresponsive.png)
- 
-[WoW AH Averages on Heroku](https://wow-ah-averages.herokuapp.com)
+![Image from the app](/testing-images/preview-image.png)
 
-[Github Repository](https://github.com/Welshy92/wow-ah-averages)
+WoW AH Averages is a python terminal app that calculates the average prices of 8 different items on the World of Warcraft Auction House based on a users input of the prices.
 
-[WoW AH Averages Google Sheet](https://docs.google.com/spreadsheets/d/1wza6kdwYhh3Aiv2q6d82rHmS1XexzgTOEdazPqkpHAo/edit?usp=sharing)
- 
 ## **CONTENTS**
 
 * [User Experience (UX)](#user-experience-ux)
