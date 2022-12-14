@@ -36,7 +36,10 @@ WoW AH Averages is a python terminal app that calculates the average prices of 8
 ## **Design**
  
 ### **Flow Chart**
- 
+
+I made a flowchart using [Lucid](https://lucid.app) to map out what I wanted to happen in the terminal.
+![Picture of flowchart](/testing-images/flowchart.png)
+
 ### **Features**
  
 ### **Future Implementations**
@@ -54,6 +57,8 @@ Python, Markdown
 * [Gitpod](https://www.gitpod.io) - To write all the python. Also used to write the README.
 * [Google Drive API](https://developers.google.com/drive/api)
 * [Google Sheets API](https://developers.google.com/sheets/api)
+* [Lucid](https://lucid.app) - To create a flowchart.
+* [Code Institute Github template](https://github.com/Code-Institute-Org/python-essentials-template) - Used to help create the terminal that displays for users on the live page.
 
 ***
 ## **Deployment & Local Development**
@@ -66,7 +71,7 @@ To do this I:
 2. This leads to the dashboard. I then clicked on "New" on the right hand side and clicked "Create New App".
 3. I set my app name to 'wow-ah-averages' and the region to Europe. Then I clicked "Create App"
 4. On the app page. I clicked onto the "Settings" tab, then "reveal config vars".
-5. I added 2 config Vars. First was called "CREDS" with the value being copied directly from my CREDS.json file. Second was called "PORT" with the value of "8000" to ensure deployment would work correctly.
+5. I added 2 config Vars. First was called "CREDS" with the value being copied directly from my entire CREDS.json file. Second was called "PORT" with the value of "8000" to ensure deployment would work correctly.
 6. I then clicked "Add Buildpack" and added Python, saving the changes after. I then clicked it again and added nodejs, saving changes again.
 7. I then clicked onto the "Deploy" tab.
 8. On the "Deployment Method" section, I clicked to connect to github and searched for the "wow-ah-averages" repository and connected it.
