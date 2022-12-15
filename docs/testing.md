@@ -2,6 +2,8 @@
 ![Picture of terminal](/testing-images/preview-image.png)
  
 [WoW AH Averages live on Heroku.](https://wow-ah-averages.herokuapp.com)
+
+[WoW AH Averages Google Sheet](https://docs.google.com/spreadsheets/d/1wza6kdwYhh3Aiv2q6d82rHmS1XexzgTOEdazPqkpHAo/edit?usp=sharing)
  
 ## **Contents**
  
@@ -9,26 +11,30 @@
 * [Automated Testing](#automated-testing)
 * [Manual Testing](#manual-testing)
 * [Bugs](#bugs)
-    * Solved Bugs
-    * Known Bugs
- 
+
 Testing was a regular occurrence during the development of this project.
 I mainly used the terminal provided within my Gitpod workspace to do testing by typing "Python3 run.py" into it.
  
 ## **Automated Testing**
  
 I used a PEP8 program developed by Code Institute to test my python code for errors. A lot of errors were thrown up originally.
+
 ![PEP8 results](/testing-images/linter-ascii.png)
+
 However I found that all of these errors were related to the ASCII art and did not have any negative effect on the running on functionality of the code. To verify no other errors, I temporarily removed the ASCII art and did the test again and no errors were found.
+
 ![PEP8 results with no ASCII art](/testing-images/linter.png)
  
 Similar things occurred within the Gitpod workspace when it displayed "problems".
+
 ![Gitpod PROBLEMS logs](/testing-images/new-problems.png)
  
 Again I temporarily removed the ASCII art to view the problems. The remaining problems also had no effect on the functionality of the program. The 'e' variable was assigned on my data validation function to throw up an error with incorrect data. No docstring is required on line 1.
+
 ![Gitpod PROBLEMS with non ASCII art](/testing-images/problem-list.png)
  
 The missing docstring error on line 255 is an odd occurrence and I couldn't really figure out why it was being thrown up. As you can see below line 255 is the end of my docstring for that function.
+
 ![Docstring on line 255](/testing-images/docstring-error.png)
  
 The .gitpod.yml errors occur due to the github template that I used.

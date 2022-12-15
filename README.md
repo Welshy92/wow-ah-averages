@@ -1,14 +1,18 @@
 # **WoW AH Averages**
  
 ![Image from the app](/testing-images/preview-image.png)
+
+[WoW AH Averages deployed app live on Heroku](https://wow-ah-averages.herokuapp.com)
+
+["View only" link to the WoW AH Averages Google Sheet](https://docs.google.com/spreadsheets/d/1wza6kdwYhh3Aiv2q6d82rHmS1XexzgTOEdazPqkpHAo/edit?usp=sharing)
  
-WoW AH Averages is a python terminal app that calculates the average prices of 8 different items on the World of Warcraft Auction House based on a users input of the prices.
+WoW AH Averages is a python terminal app that calculates the average prices of 8 different items on the World of Warcraft Auction House based on a users input of the prices. This can aid the user in setting prices on the items that will sell well but make a tidy profit.
  
 ## **CONTENTS**
  
 * [User Experience (UX)](#user-experience-ux)
 * [Design](#design)
-* [Technologies Used](#technologies-used)
+* [Technologies Used](#languages-used)
 * [Deployment & Local Development](#deployment)
 * [Testing](#testing) - [External document here](/docs/testing.md)
 * [Credits](#credits)
@@ -35,12 +39,13 @@ WoW AH Averages is a python terminal app that calculates the average prices of 8
  
 ### **Flow Chart**
  
-I made a flowchart using [Lucid](https://lucid.app) to map out what I wanted to happen in the terminal.
+I made a flowchart using [LucidChart](https://lucid.app) to map out what I wanted to happen in the terminal.
 ![Picture of flowchart](/testing-images/flowchart.png)
  
 ### **Features**
  
 * User data entry for 8 different items.
+* Validation on each data entry to make sure it is a whole number above 0.
 * Data written to a google sheet.
 * Averages for each item based on the last 5 entries of the sheet is calculated and displayed to the user.
  
@@ -48,6 +53,7 @@ I made a flowchart using [Lucid](https://lucid.app) to map out what I wanted to 
  
 * Add some different colours to the text to make things stand out and feel a bit more separated.
 * Implement World of Warcrafts API to allow data entry from inside the game or even grab the required data from the game itself.
+* Calculate and show the changing average to the user.
  
 ### **Languages used**
 Python, Markdown
@@ -59,7 +65,7 @@ Python, Markdown
 * [Gitpod](https://www.gitpod.io) - To write all the python. Also used to write the README.
 * [Google Drive API](https://developers.google.com/drive/api)
 * [Google Sheets API](https://developers.google.com/sheets/api)
-* [Lucid](https://lucid.app) - To create a flowchart.
+* [LucidChart](https://lucid.app) - To create a flowchart.
 * [Code Institute Github template](https://github.com/Code-Institute-Org/python-essentials-template) - Used to help create the terminal that displays for users on the live page.
  
 ***
@@ -105,7 +111,7 @@ This is a solo project created by [myself.](https://github.com/Welshy92)
 ### **Learning Resources**
  
 There are a few different sites that I used to learn the required skills to develop this website.
-* [Code Institute](https://codeinstitute.net) - Used for python essential learning resources.
+* [Code Institute](https://codeinstitute.net) - Used for python essential learning resources. They also provided the template that contained the terminal used by the user.
 * [Stack Overflow](https://stackoverflow.com) - Used to check over some errors I had.
 * [Google Developers](https://developers.google.com) - Used to help look up some API interactions.
 * [w3schools](https://www.w3schools.com) - Used to check over some of the python syntax.
