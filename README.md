@@ -1,11 +1,11 @@
 # **WoW AH Averages**
  
 ![Image from the app](/testing-images/preview-image.png)
-
+ 
 WoW AH Averages is a python terminal app that calculates the average prices of 8 different items on the World of Warcraft Auction House based on a users input of the prices.
-
+ 
 ## **CONTENTS**
-
+ 
 * [User Experience (UX)](#user-experience-ux)
 * [Design](#design)
 * [Technologies Used](#technologies-used)
@@ -17,7 +17,7 @@ WoW AH Averages is a python terminal app that calculates the average prices of 8
 ## **User Experience (UX)**
  
 #### Goals:
-
+ 
 * I want the user to be able to enter the price of 8 items that have a high demand on the World of Warcraft auction house. These items are:
     * Titansteel Bar
     * Savory Deviate Delight
@@ -29,23 +29,25 @@ WoW AH Averages is a python terminal app that calculates the average prices of 8
     * Frostweave Cloth
 * I then want the app to calculate the average prices using the last 5 entries for each of the 8 items, and show these average prices to the user.
 * Using these averages should aid the user in setting a good price for each item. the prices will allow it to sell well, but still make a tidy profit in game.
-
- 
  
 ***
 ## **Design**
  
 ### **Flow Chart**
-
+ 
 I made a flowchart using [Lucid](https://lucid.app) to map out what I wanted to happen in the terminal.
 ![Picture of flowchart](/testing-images/flowchart.png)
-
+ 
 ### **Features**
  
+* User data entry for 8 different items.
+* Data written to a google sheet.
+* Averages for each item based on the last 5 entries of the sheet is calculated and displayed to the user.
+ 
 ### **Future Implementations**
-
-* Add some different colours to the text to make things stand out more.
-* Implement World of Warcrafts API to allow data entry from inside the game.
+ 
+* Add some different colours to the text to make things stand out and feel a bit more separated.
+* Implement World of Warcrafts API to allow data entry from inside the game or even grab the required data from the game itself.
  
 ### **Languages used**
 Python, Markdown
@@ -59,7 +61,7 @@ Python, Markdown
 * [Google Sheets API](https://developers.google.com/sheets/api)
 * [Lucid](https://lucid.app) - To create a flowchart.
 * [Code Institute Github template](https://github.com/Code-Institute-Org/python-essentials-template) - Used to help create the terminal that displays for users on the live page.
-
+ 
 ***
 ## **Deployment & Local Development**
  
@@ -75,7 +77,7 @@ To do this I:
 6. I then clicked "Add Buildpack" and added Python, saving the changes after. I then clicked it again and added nodejs, saving changes again.
 7. I then clicked onto the "Deploy" tab.
 8. On the "Deployment Method" section, I clicked to connect to github and searched for the "wow-ah-averages" repository and connected it.
-9. Further down the page, I enabled automatic deploys so that Heroku would rebuild and deploy the app whenever changes are pushed to the github repository. There is an option below to manually build the app if that is prefered.
+9. Further down the page, I enabled automatic deployments so that Heroku would rebuild and deploy the app whenever changes are pushed to the github repository. There is an option below to manually build the app if that is preferred.
  
 ### **Local Development**
  
@@ -107,10 +109,8 @@ There are a few different sites that I used to learn the required skills to deve
 * [Stack Overflow](https://stackoverflow.com) - Used to check over some errors I had.
 * [Google Developers](https://developers.google.com) - Used to help look up some API interactions.
 * [w3schools](https://www.w3schools.com) - Used to check over some of the python syntax.
-* [Tutorial by EyeHunts](https://tutorial.eyehunts.com) - Used to check on the differences between global and local variabes.
-
-### **Code Used**
-
- Lines 1-13 was taken directly from the Code institue 'Love Sandwiches' mini-project and modified to link up to my own projects API + worksheet.
-### **Acknowledgments**
+* [Tutorial by EyeHunts](https://tutorial.eyehunts.com) - Used to check on the differences between global and local variables.
  
+### **Code Used**
+ 
+ Lines 1-13 was taken directly from the Code Institute 'Love Sandwiches' mini-project and modified to link up to my own projects API + worksheet.
