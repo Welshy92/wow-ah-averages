@@ -232,7 +232,7 @@ def last_five_prices():
 def calculate_new_averages(data):
     """
     Calculate the average price for each item type over the last
-    5 sets on inputs, then append them to the average worksheet.
+    5 sets of inputs, then append them to the average worksheet.
     """
     print("###############################################")
     print("Calculating new average prices...\n")
