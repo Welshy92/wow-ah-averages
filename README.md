@@ -2,7 +2,7 @@
  
 ![Image from the app](/testing-images/preview-image.png)
 
-[WoW AH Averages deployed app live on Heroku](https://wow-ah-averages.herokuapp.com)
+[WoW AH Averages deployed app live on Heroku](https://wow-ah-averages.onrender.com)
 
 ["View only" link to the WoW AH Averages Google Sheet](https://docs.google.com/spreadsheets/d/1wza6kdwYhh3Aiv2q6d82rHmS1XexzgTOEdazPqkpHAo/edit?usp=sharing)
  
@@ -72,7 +72,7 @@ Python, Markdown
 ## **Deployment & Local Development**
  
 ### **Deployment**
-The app is deployed using Heroku. Visit the deployed app [here.](https://wow-ah-averages.herokuapp.com)
+The app was originally deployed using Heroku. Visit the deployed app [here.](https://wow-ah-averages.herokuapp.com)
  
 To do this I:
 1. Logged into [Heroku](https://www.heroku.com)
