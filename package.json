@@ -20,4 +20,15 @@
     "node-static": "^0.7.11",
     "total4": "^0.0.45"
   },
+  "engines": {
+    "node": ">=18.18.0 <19.0.0"
+  },
+  "node_modules/total4": {
+    "version": "0.0.45",
+    "resolved": "https://registry.npmjs.org/total4/-/total4-0.0.45.tgz",
+    "integrity": "sha512-96vXqejddbAeNL6zpzbfm8ztiWL4G0fOuoUWniHDlu6oSz+DcxekHkzK0Y9X+ErlHCRTMsP2+ieMTqG6waowiA==",
+    "bin": {
+      "total4": "bin/total4"
+    }
+  }
 }
