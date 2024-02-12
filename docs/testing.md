@@ -1,7 +1,7 @@
 # **WoW AH Averages - Testing**
 ![Picture of terminal](/testing-images/preview-image.png)
  
-[WoW AH Averages live on Heroku.](https://wow-ah-averages.onrender.com)
+[WoW AH Averages live at onrender.](https://wow-ah-averages.onrender.com)
 
 [WoW AH Averages Google Sheet](https://docs.google.com/spreadsheets/d/1wza6kdwYhh3Aiv2q6d82rHmS1XexzgTOEdazPqkpHAo/edit?usp=sharing)
  
